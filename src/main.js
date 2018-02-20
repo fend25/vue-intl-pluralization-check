@@ -6,7 +6,6 @@ import VueIntl from 'vue-intl'
 Vue.use(VueIntl)
 
 Vue.setLocale('ru')
-
 Vue.registerMessages('ru', {
   things: `{n}. how much: {n, plural,
 zero {no any}
@@ -16,11 +15,6 @@ few {{n} few}
 many {{n} many}
 other {{n} other}
 }`
-})
-Vue.registerFormats('ru', {
-  number: {
-    rub: {style: 'currency', currency: 'RUB'}
-  }
 })
 
 new Vue({
